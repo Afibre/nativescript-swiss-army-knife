@@ -1,11 +1,11 @@
-import { isAndroid, isIOS } from "tns-core-modules/platform";
-import { ListView } from "tns-core-modules/ui/list-view";
-import { ScrollView } from "tns-core-modules/ui/scroll-view";
+import { isAndroid, isIOS } from "@nativescript/core/platform";
+import { ListView } from "@nativescript/core/ui/list-view";
+import { ScrollView } from "@nativescript/core/ui/scroll-view";
 export function disableScrollBounce(view: ScrollView | ListView): void {
-	// no ui bounce. causes problems
-	if (isIOS) {
-		view.ios.bounces = false;
-	} else if (isAndroid && view.android != null) {
-		view.android.setOverScrollMode(2);
-	}
+  // no ui bounce. causes problems
+  if (isIOS) {
+    view.ios.bounces = false;
+  } else if (isAndroid && view.android != null) {
+    view.android.setOverScrollMode(2);
+  }
 }

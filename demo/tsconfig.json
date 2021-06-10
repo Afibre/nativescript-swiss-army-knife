@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
+        "module": "esnext",
+        "target": "es2017",
         "noImplicitAny": false,
-        "removeComments": true,
+        "removeComments": false,
         "preserveConstEnums": true,
         "declaration": false,
         "noLib": false,
@@ -11,7 +11,8 @@
         "experimentalDecorators": true,
         "lib": [
             "es6",
-            "dom"
+            "dom",
+            "es2017"
         ],
         "baseUrl": ".",
         "paths": {
@@ -22,7 +23,8 @@
             "~/*": [
                 "app/*"
             ]
-        }
+        },
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules",

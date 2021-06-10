@@ -4,12 +4,6 @@
 	"description": "Nativescript Swiss Army Knife",
 	"main": "index",
 	"typings": "index.d.ts",
-	"nativescript": {
-		"platforms": {
-			"android": "3.0.0",
-			"ios": "3.0.0"
-		}
-	},
 	"scripts": {
 		"build": "tsc",
 		"tslint": "tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
@@ -69,9 +63,9 @@
 	"devDependencies": {
 		"husky": "^1.1.2",
 		"lint-staged": "^7.3.0",
-		"prettier": "^1.4.4",
-		"tns-core-modules": "^4.2.1",
-		"tns-platform-declarations": "^4.2.1",
+	        "prettier": "^1.4.4",
+                "@nativescript/core": "~8.0.0",
+                "@nativescript/types": "~8.0.0",
 		"tslint": "^5.11.0",
 		"typescript": "^2.8.2"
 	}
